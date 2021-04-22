@@ -18,7 +18,7 @@
 
 - ``` $ pipenv install awscli ```
 
-### Enter AWS Security Credentials --> Create Keys and save output.csv in AWS IAM User.
+### Enter AWS Security Credentials --> Create Keys in AWS IAM User and save output.csv.
 
 - ``` $ pipenv shell ```
 
