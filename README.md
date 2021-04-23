@@ -40,4 +40,4 @@
 
 ### List specific file names --> Ex:
 
-- ``` $ aws s3 ls s3://orca.media/videos/knee-anim/ | awk '{print $4}' > ./knee-log.csv ```
+- ``` $ aws s3 ls s3://orca.media/videos/knee-anim/ | awk '{print $4}' > ./logs/knee-log.csv ```
