@@ -6,19 +6,19 @@ with open(filename) as csvfile:
   reader = csv.DictReader(csvfile)
   for row in reader:
     value = list(row.values())
-    value_string = "".join(map(str, value))
-    value_strip = str(value_string).strip("[']")
-    original = value_strip
+    value_list = "".join(map(str, value))
+    value_string = str(value_list).strip("[']")
+
+    original = value_string
     size = len(original)
 
     strip = original[:size - 14]
     string_split = strip.split('_')
-
     list_to_string = str(string_split).strip("[']")
     string_cap = [string_split.capitalize() for string_split in string_split]
-    y = " ".join(string_cap)
+    final_value = " ".join(string_cap)
 
-    print(y)
+    print(final_value)
 
 
 
