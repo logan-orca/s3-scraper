@@ -48,3 +48,7 @@
 - In sweeper folder - run ```chop.py``` with the appropriate CSV import.
 - Copy and Paste values for now
 - Doesn't take care of camelCase but it works for everything else...
+
+## Command Line for Thumbnails
+
+``` $ for f in *.mp4; do ffmpeg -i "$f" -ss 00:00:03 -vframes 1 -s 480x320 "${f%.mp4}.jpg"; done ```
