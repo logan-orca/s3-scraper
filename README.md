@@ -6,7 +6,9 @@
 
 - ``` $ cd desktop/orca/{your_directory} ```
 
-- ``` $ cd your_directory ```
+- ``` $ git clone git@github.com:logan-orca/s3-scraper.git ```
+
+- ``` $ cd your_repo ```
 
 - ``` $ pipenv shell ```
 
