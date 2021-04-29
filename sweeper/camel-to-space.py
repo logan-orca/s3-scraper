@@ -1,24 +1,13 @@
+import csv
 import re
 
-import csv
+filename = "../logs/spine-log.csv"
 
-with open('../logs/knee-log.csv') as csvfile:
+with open(filename) as csvfile:
   reader = csv.DictReader(csvfile)
   for row in reader:
-    print(row)
-
-def camel_case_split(str):
-      
-    start_idx = [i for i, e in enumerate(str)
-                 if e.isupper()] + [len(str)]
-  
-    start_idx = [0] + start_idx
-    return [str[x: y] for x, y in zip(start_idx, start_idx[1:])] 
-      
-      
-# # Driver code
-# str = "GeeksForGeeks"
-# print(camel_case_split(str))
-
-
-# Import array from logs:
+    value = list(row.values())
+    value_list = "".join(map(str, value))
+    output = re.sub("([A-Z])", " \\1", f'{value_list}').strip()
+    cap_output = output.title()
+    print(cap_output)
