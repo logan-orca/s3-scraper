@@ -47,9 +47,27 @@
 
 ## Python
 
+For files with Underscores "_":
 - In sweeper folder - run ```chop.py``` with the appropriate CSV import.
-- Copy and Paste values for now
-- Doesn't take care of camelCase but it works for everything else...
+- ex: 
+- ``` $ pipenv shell ```
+
+- ``` (scraper) bash-3.2$ cd sweeper ```
+
+- ``` (scraper) bash-3.2$ python chop.py ```
+
+- Copy and Paste output.
+
+For files with camelCase:
+- In sweeper folder - run ```camel-to-space.py``` with the appropriate CSV import.
+- ex: 
+- ``` $ pipenv shell ```
+
+- ``` (scraper) bash-3.2$ cd sweeper ```
+
+- ``` (scraper) bash-3.2$ python camel-to-space.py ```
+
+- Copy and Paste output.
 
 ## Command Line for Thumbnails
 
