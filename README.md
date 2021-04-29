@@ -48,8 +48,11 @@
 ## Python
 
 For files with Underscores "_":
+
 - In sweeper folder - run ```chop.py``` with the appropriate CSV import.
+
 - ex: 
+
 - ``` $ pipenv shell ```
 
 - ``` (scraper) bash-3.2$ cd sweeper ```
@@ -59,8 +62,11 @@ For files with Underscores "_":
 - Copy and Paste output.
 
 For files with camelCase:
+
 - In sweeper folder - run ```camel-to-space.py``` with the appropriate CSV import.
+
 - ex: 
+
 - ``` $ pipenv shell ```
 
 - ``` (scraper) bash-3.2$ cd sweeper ```
