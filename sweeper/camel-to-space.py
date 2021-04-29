@@ -1,7 +1,7 @@
 import csv
 import re
 
-filename = "../logs/spine-log.csv"
+filename = "../logs/ent-log.csv"
 
 with open(filename) as csvfile:
   reader = csv.DictReader(csvfile)
